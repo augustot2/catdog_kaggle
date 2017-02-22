@@ -49,3 +49,23 @@ def random_select(train_path, num_images,image_size,num_channel):
     pickle.dump(label, Label_pickle_file)
     print("Label pickle stored in:", os.path.abspath(current_path),"/Label.pickle")
     print("Image pickle stored in:", os.path.abspath(current_path),"/Train.pickle")
+
+def load_test_dataset(train_path, image_size,num_channel, num_images = [None]):
+    os.chdir(train_path)
+    current_path =os.path.join(train_path, os.pardir)
+
+    images = os.listdir()
+
+    if num_images == None:
+        num_images = len(images)
+
+    dataset = np.ndarray(shape=(num_images, image_size, image_size, num_channel),
+                             dtype=np.float32)
+    j = 0
+    for image in images[0:num_images]:
+        print(image)
+        image_matrix = Image.open(image)
+        image_matrix = np.asarray(image_matrix)
+        dataset[j,:,:,:] = image_matrix
+
+    return dataset, images

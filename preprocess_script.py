@@ -34,7 +34,7 @@ import PIL
 from PIL import Image
 
 # Processing parameters
-SIZE = 224  # for ImageNet models compatibility
+SIZE = 56  # for ImageNet models compatibility
 TEST_DIR = 'data/test/'
 TRAIN_DIR = 'data/train/'
 BASE_DIR = '.'

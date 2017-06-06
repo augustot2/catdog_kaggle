@@ -1,5 +1,6 @@
 # catdog kaggle
 
+![catdog](/images/catdog.png)
 <img src= "./images/catdog.png", width= 350 >
 
   In this repository  will be applyed convolution neural network (CNN) in series of

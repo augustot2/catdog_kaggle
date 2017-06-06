@@ -1,6 +1,6 @@
 # catdog kaggle
 
-![catdog](/images/catdog.png =250x200px)
+![catdog](/images/catdog.png =250x200)
 
 
   In this repository  will be applyed convolution neural network (CNN) in series of
